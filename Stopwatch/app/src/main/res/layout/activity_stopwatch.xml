@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<linearLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".StopwatchActivity">
 
     <TextView
@@ -22,7 +23,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:onClick="onClickStart"
-        android:text="@string/start" /> <!--Quando clicado chama método onClickStart()-->
+        android:text="@string/start" />
 
     <Button
         android:id="@+id/stop_button"
@@ -31,7 +32,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
         android:onClick="onClickStop"
-        android:text="@string/stop" /> <!--Quando clicado chama método onClickStop()-->
+        android:text="@string/stop" />
 
     <Button
         android:id="@+id/reset_button"
@@ -40,6 +41,5 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
         android:onClick="onClickReset"
-        android:text="@string/reset" /> <!--Quando clicado chama método onClickReset()-->
-    
-</linearLayout>
+        android:text="@string/reset" />
+</LinearLayout>
